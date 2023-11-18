@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <title>Sign Up</title>
+    <link rel = "icon" href = 
+    "https://cdn-icons-png.flaticon.com/512/5654/5654864.png"
+            type = "image/x-icon"></link>
+</head>
+<body>
+    <div class="sign-up py-4 vh-100">
+        <div class="container">
+            <h1 class="px-3" >Sign Up</h1>
+            <div id="calltoaction-form" class="teaser-form">
+                <form id="contact_form" onsubmit="return validateForm()"  >
+                  <div class="form-section px-3 py-1">
+                    <div><label class="ttt py-2 " for="name">Name</label></div>
+                    <input type="text" id="name" name="name" pattern="[A-Za-z0-9-_@]{3,}" required >
+                  </div>
+                  <div class="form-section px-3 py-1">
+                    <div><label class="ttt py-2" for="full-name">Full Name</label></div>
+                    <input type="text" id="full-name" name="full-name" minlength="3" maxlength="15" required>
+                  </div>
+                
+                  <div class="Filed px-3">
+                    <p>This Filed is required.</p>   
+                    </div>
+                    <div class="form-section px-3 py-1">
+                        <div><label class="ttt py-2" for="age">Age</label></div>
+                        <input type="text" id="age" name="age" min="18" max="100" >
+                      </div>
+                      <div class="form-section px-3 ">
+                        <div><label class="ttt py-2" for="country">Country</label></div>
+                        <select class="form-sectionn py-1" id="country" name="country">
+                            <option value="0"></option>
+                            <option value="1">Britain</option>
+                            <option value="2">Brazil</option>
+                            <option value="3">France</option>
+                            <option value="4">Paris</option>
+                            <option value="5">Italy</option>
+                        </select>
+                      </div>
+                      <div class="Filed px-3">
+                        <p>This Filed is required.</p>   
+                        </div>
+                        <div class="form-section px-3 py-1">
+                            <div><label class="ttt py-2 " for="mobile-number">Mobile</label></div>
+                            <input type="tel" id="mobile-number" name="mobile-number"   placeholder="05-xxxxxxxx" pattern="05\d{8}" required>
+                          </div>
+                          <div class="form-section px-3 py-1">
+                            <div><label class="ttt py-2" for="email">Email</label></div>
+                            <input  type="email" id="email" name="email" required >
+                          </div>
+                        
+                          <div class="Filed px-3">
+                            <p>This Filed is required.</p>   
+                            </div>
+                            <div class="form-section px-3 py-1">
+                                <div><label class="ttt py-2 " for="password">Password</label></div>
+                                <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,24}$" required  >
+                              </div>
+                              <div class="form-section px-3 py-1">
+                                <div><label class="ttt py-2" for="confirm-password">Confirm Password</label></div>
+                                <input type="password" id="confirm-password" name="confirm-password" required pattern=".*" title="Passwords must match." oninput="checkPasswordMatch(this)">
+                              </div>
+                            
+                              <div class="Filed px-3">
+                                <p>This Filed is required.</p>   
+                                </div>
+                                <div class="form-sectionnn px-3 py-2">
+                                <input class="clear" type="submit" value="Clear" onclick="clearFields()">
+                                <input class="save" type="submit" value="Save">
+                            </div>
+                </form>
+                <div class="success-message" id="success-message"></div>
+            </div>
+        
+        </div>
+           </div>
+      
+</div>
+<script>
+    function validateForm() {
+    }
+    function clearFields() {
+    }
+    function checkPasswordMatch(input) {
+       
+    }
+</script>
+</body>
+</html>
+
+

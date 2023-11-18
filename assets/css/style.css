@@ -1,0 +1,61 @@
+.sign-up{
+  background-color:azure;
+  width: 500px;
+}
+.sign-up h1{
+  font-size: 25px;
+}
+.textt label{
+font-size: 20px;
+display: block;
+}
+.Filed{
+color: red;
+}
+.tt{
+padding-left: 60px;
+display: inline;
+}
+.form-section{
+  display:inline-block;
+}
+.form-sectionn{
+  width: 270%;
+  
+}
+.form-sectionnn{
+  float: right;
+}
+.save{
+ background-color: rgb(25, 162, 20);
+ border-radius:2px ;
+ -webkit-border-radius:2px ;
+ -moz-border-radius:2px ;
+ -ms-border-radius:2px ;
+ -o-border-radius:2px ;
+ border: none;
+ width: 60px;
+ height: 40px;
+ color: white;
+ font-weight: 500;
+}
+.clear{
+ background-color: rgb(255, 255, 255);
+ border-radius:3px ;
+ -webkit-border-radius:3px ;
+ -moz-border-radius:3px ;
+ -ms-border-radius:3px ;
+ -o-border-radius:3px ;
+ border-color: rgb(243, 237, 237);
+ width: 60px;
+ height: 40px;
+ color: rgb(0, 0, 0);
+ font-weight: 500;
+}
+.success-message{
+  color: green;
+}
+.ttt{
+  font-size: 18px;
+  font-weight: 500;
+}
